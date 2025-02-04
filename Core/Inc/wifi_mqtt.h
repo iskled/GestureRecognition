@@ -6,7 +6,7 @@
 #include "stm32l4xx_hal.h"
 
 #define WIFI_SSID       "          "   
-#define WIFI_PASSWORD   "                       "
+#define WIFI_PASSWORD   "                   "
 #define MQTT_BROKER     "                "
 #define MQTT_PORT      
 #define MQTT_TOPIC      "sensor/data" // MQTT topic for data publishing
