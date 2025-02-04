@@ -1,13 +1,21 @@
-/*
- * wifi_mqtt.h
- *
- *  Created on: Feb 4, 2025
- *      Author: user
- */
+/* wifi_mqtt.h - WiFi and MQTT Communication Interface */
 
-#ifndef SRC_WIFI_MQTT_H_
-#define SRC_WIFI_MQTT_H_
+#ifndef WIFI_MQTT_H
+#define WIFI_MQTT_H
 
+#include "stm32l4xx_hal.h"
 
+#define WIFI_SSID       "          "   
+#define WIFI_PASSWORD   "                       "
+#define MQTT_BROKER     "                "
+#define MQTT_PORT      
+#define MQTT_TOPIC      "sensor/data" // MQTT topic for data publishing
 
-#endif /* SRC_WIFI_MQTT_H_ */
+// Function Prototypes
+void WiFi_Init(void);
+void MQTT_Connect(void);
+void MQTT_Publish(const char *topic, const char *message);
+void MQTT_Subscribe(const char *topic);
+void MQTT_Callback(char *topic, char *message);
+
+#endif /* WIFI_MQTT_H */
