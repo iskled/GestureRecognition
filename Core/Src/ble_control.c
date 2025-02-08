@@ -5,7 +5,7 @@
 extern UART_HandleTypeDef huart4;
 
 void BLE_Init(UART_HandleTypeDef *huart) {
-    // Initialize BLE module
+    // Initialize bluetooth module
 }
 
 void BLE_SendGesture(int gesture) {
